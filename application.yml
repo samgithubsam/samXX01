@@ -1,8 +1,19 @@
-server.port=9090
-#设置服务名
-spring.application.name=demoeurekaclient
-#设置服务注册中心的URL，本服务要向该服务注册中心注册自己
-eureka.client.serviceUrl.defaultZone=http://localhost:1111/eureka
+spring:
+ profiles:
+   active:
+    - dev
+
+－－－
+spring:
+ profiles: dev
+ application:
+   name: microservicecloud-config-atiguigu-dev
+
+－－－
+spring:
+ profiles: test
+ application:
+   name: microservicecloud-config-atiguigu-test
 
 
 
